@@ -65,10 +65,10 @@ types['methods'].push({
           defaultValue: '请输入大小写字母、数字、连接符、下划线或井号；秘钥不同，返回的结果也会不同',
       },
       {
-          key: 'Password',
-          label: '密码',
+          key: 'Text',
+          label: '内容',
           valueType: 'string',
-          defaultValue: '请输入密码',
+          defaultValue: '请输入要加密的内容',
       },],
     valueType: 'string',
     blockOptions: {
@@ -79,8 +79,8 @@ types['methods'].push({
     space: 16,
 },
 })
-Widget.prototype.encode = function (Key,Password,) {
-      return (OveEn(Key, Password));
+Widget.prototype.encode = function (Key,Text,) {
+      return (OveEn(Key, Text));
 }
 exports.types = types;
 exports.widget = Widget;
